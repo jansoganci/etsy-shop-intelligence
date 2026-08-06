@@ -1,0 +1,61 @@
+/* Night Ops HUD — dark is default (:root + data-theme=dark) */
+:root,
+:root[data-theme="dark"] {
+  --color-bg: #0b0f14;
+  --color-surface: #131a22;
+  --color-surface-muted: #1a222d;
+  --color-surface-elevated: #1c2530;
+  --color-border: rgba(0, 229, 255, 0.22);
+  --color-border-subtle: rgba(0, 229, 255, 0.15);
+  --color-text-primary: #e8eef2;
+  --color-text-secondary: #9aa8b5;
+  --color-text-muted: #6e7d8b;
+  --color-accent: #00e5ff;
+  --color-accent-strong: #67f0ff;
+  --color-accent-container: #005a66;
+  --color-on-accent: #0b0f14;
+  --color-secondary: #ff2e88;
+  --color-positive: #00d68f;
+  --color-negative: #ff4d6d;
+  --color-warning: #5b8cff;
+  --color-chart-grid: #1a222d;
+  --color-chart-axis: #2a3542;
+  --color-ga-active-users: #5b8cff;
+  --color-ga-sessions: #00d68f;
+  --color-ga-page-views: #ff2e88;
+  --color-chart-1: #00e5ff;
+  --color-chart-2: #ff2e88;
+  --color-chart-3: #00d68f;
+  --color-chart-4: #5b8cff;
+  --color-chart-5: #a78bfa;
+}
+
+:root[data-theme="light"] {
+  --color-bg: #f2f5f7;
+  --color-surface: #ffffff;
+  --color-surface-muted: #e8eef2;
+  --color-surface-elevated: #ffffff;
+  --color-border: rgba(0, 145, 168, 0.28);
+  --color-border-subtle: rgba(0, 145, 168, 0.18);
+  --color-text-primary: #0b1220;
+  --color-text-secondary: #4a5563;
+  --color-text-muted: #6b7785;
+  --color-accent: #0091a8;
+  --color-accent-strong: #007a8f;
+  --color-accent-container: #007a8a;
+  --color-on-accent: #ffffff;
+  --color-secondary: #d6006e;
+  --color-positive: #0b9b6b;
+  --color-negative: #c01048;
+  --color-warning: #3b6fd9;
+  --color-chart-grid: #e4eaef;
+  --color-chart-axis: #c5d0d8;
+  --color-ga-active-users: #3b6fd9;
+  --color-ga-sessions: #0b9b6b;
+  --color-ga-page-views: #d6006e;
+  --color-chart-1: #0091a8;
+  --color-chart-2: #d6006e;
+  --color-chart-3: #0b9b6b;
+  --color-chart-4: #3b6fd9;
+  --color-chart-5: #7c3aed;
+}

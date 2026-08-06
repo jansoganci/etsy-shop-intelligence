@@ -1,0 +1,69 @@
+.commerce-summary-modal {
+  max-width: 560px;
+}
+
+.commerce-summary-modal__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.commerce-summary-modal__status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.commerce-summary-modal__status > span {
+  color: var(--color-text-secondary);
+  font-size: 0.86rem;
+}
+
+.commerce-summary-modal__counts,
+.commerce-summary-modal__financial-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-3);
+}
+
+.commerce-summary-modal__financials {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.commerce-summary-metric {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-3);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  background: var(--color-surface-muted);
+}
+
+.commerce-summary-metric > span {
+  color: var(--color-text-muted);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.commerce-summary-metric > strong {
+  font-size: 1rem;
+}
+
+.commerce-summary-modal__warnings {
+  margin: var(--space-2) 0 0;
+  padding-left: 1.1rem;
+}
+
+@media (max-width: 520px) {
+  .commerce-summary-modal__counts,
+  .commerce-summary-modal__financial-grid {
+    grid-template-columns: 1fr;
+  }
+}

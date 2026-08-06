@@ -1,0 +1,201 @@
+.kpi-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-card);
+  padding: 14px 16px 12px;
+  box-shadow: none;
+}
+
+.kpi-card__top,
+.metric-card__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.metric-card__aside {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.kpi-card__label {
+  margin: 0 0 6px;
+  color: var(--color-text-muted);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+}
+
+.kpi-card__value {
+  display: block;
+  font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.kpi-card__icon {
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-sm);
+  display: grid;
+  place-items: center;
+  font-size: 0.78rem;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.kpi-card__icon--neutral {
+  background: color-mix(in srgb, var(--color-text-muted) 10%, var(--color-surface));
+  color: var(--color-text-secondary);
+}
+
+.kpi-card__icon--positive {
+  background: color-mix(in srgb, var(--color-positive) 12%, var(--color-surface));
+  color: var(--color-positive);
+}
+
+.kpi-card__icon--accent {
+  background: color-mix(in srgb, var(--color-accent) 12%, var(--color-surface));
+  color: var(--color-accent-strong);
+}
+
+.kpi-card__icon--warning {
+  background: color-mix(in srgb, var(--color-negative) 10%, var(--color-surface));
+  color: var(--color-negative);
+}
+
+.kpi-card__footer {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--color-border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  color: var(--color-text-secondary);
+  font-size: 0.8rem;
+}
+
+.kpi-card__footer strong {
+  color: var(--color-text-primary);
+  font-size: 0.86rem;
+  font-weight: 600;
+}
+
+.kpi-card__helper {
+  display: block;
+  margin-top: 8px;
+  line-height: 1.4;
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+}
+
+.metric-card--insight,
+.kpi-card--insight {
+  padding: 12px 14px 11px;
+  background: color-mix(in srgb, var(--color-surface-muted) 72%, var(--color-surface));
+  box-shadow: none;
+}
+
+.metric-card--insight .kpi-card__label,
+.kpi-card--insight .kpi-card__label {
+  text-transform: none;
+  letter-spacing: normal;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+}
+
+.metric-card--insight .kpi-card__value,
+.kpi-card--insight .kpi-card__value {
+  font-size: clamp(1.05rem, 1.3vw, 1.28rem);
+  font-weight: 600;
+}
+
+.metric-card--insight .kpi-card__footer,
+.kpi-card--insight .kpi-card__footer {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top-style: dashed;
+  font-size: 0.78rem;
+}
+
+.metric-card--insight .kpi-card__footer strong,
+.kpi-card--insight .kpi-card__footer strong {
+  font-size: 0.82rem;
+}
+
+.metric-card--insight .kpi-card__helper,
+.kpi-card--insight .kpi-card__helper {
+  margin-top: 6px;
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+}
+
+.kpi-card--insight.kpi-card--warning {
+  border-left: 3px solid color-mix(in srgb, var(--color-warning) 70%, transparent);
+}
+
+.kpi-card--insight.kpi-card--accent {
+  border-left: 3px solid color-mix(in srgb, var(--color-accent) 55%, transparent);
+}
+
+.metric-card__trend {
+  margin-top: 8px;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.metric-card__trend strong {
+  font-size: 0.92rem;
+}
+
+.metric-card__trend span {
+  font-size: 0.84rem;
+  color: var(--color-text-secondary);
+}
+
+.metric-card__trend--up strong {
+  color: var(--color-positive);
+}
+
+.metric-card__trend--down strong {
+  color: var(--color-negative);
+}
+
+.metric-card__trend--flat strong {
+  color: var(--color-text-secondary);
+}
+
+.metric-card__progress {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+}
+
+.metric-card__progress-svg {
+  display: block;
+  transform: rotate(-90deg);
+}
+
+.metric-card__progress-track {
+  fill: none;
+  stroke: var(--color-border-subtle);
+  stroke-width: 2.5;
+}
+
+.metric-card__progress-value {
+  fill: none;
+  stroke: var(--color-accent);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+}

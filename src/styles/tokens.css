@@ -1,0 +1,49 @@
+:root {
+  --font-display: "Space Grotesk", "Inter", "SF Pro Text", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-sans: "Inter", "SF Pro Text", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+
+  --text-display: 700 2rem/1.15 var(--font-display);
+  --text-headline: 600 1.5rem/1.25 var(--font-display);
+  --text-title: 600 1.125rem/1.35 var(--font-display);
+  --text-body: 400 0.9375rem/1.5 var(--font-sans);
+  --text-label: 500 0.875rem/1.4 var(--font-sans);
+  --text-caption: 600 0.75rem/1.35 var(--font-sans);
+
+  /* Comfortable density (Dashboard default) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-gutter: 20px;
+  --space-section: 16px;
+  --space-page-x: 28px;
+  --space-page-y: 24px;
+  --space-card: 22px;
+  --space-card-compact: 18px;
+
+  /* Compact density (Reports / tables) */
+  --space-section-compact: 12px;
+  --space-page-x-compact: 20px;
+  --space-page-y-compact: 16px;
+  --space-gutter-compact: 12px;
+
+  /* Night Ops: card 8px, control 4px */
+  --radius-button: 4px;
+  --radius-badge: 4px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-card: 8px;
+  --radius-lg: 12px;
+  --radius-pill: 9999px;
+
+  /* Cards are flat — shadows neutralized for Night Ops */
+  --shadow-soft: none;
+  --shadow-glass: none;
+
+  --sidebar-width: 16rem;
+  --sidebar-width-icon: 3rem;
+  --sidebar-width-mobile: 18rem;
+}

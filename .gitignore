@@ -1,0 +1,92 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+*.tsbuildinfo
+vite.config.js
+vite.config.d.ts
+
+# Environment / secrets
+.env
+.env.*
+.dev.vars
+.dev.vars.*
+!.dev.vars.example
+!workers/etsy-sync/.dev.vars.example
+*.pem
+*.key
+*.p12
+*.crt
+*.cert
+*.private
+*.secret
+
+# Service account / credential files
+*service-account*.json
+*credentials*.json
+*credential*.json
+*secret*.json
+*private-key*.json
+google-service-account*.json
+
+# Ignore broad generated/key-style JSON files, but keep project config JSON files
+*-*.json
+!package.json
+!package-lock.json
+!tsconfig.json
+!tsconfig.*.json
+
+# Cloudflare / local runtime
+.wrangler/
+.local-state/
+wrangler.jsonc
+wrangler.local.*
+wrangler.private.*
+/workers/etsy-sync/wrangler.jsonc
+
+# Local database files
+*.sqlite
+*.sqlite3
+*.sqlite-wal
+*.sqlite-shm
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Private docs / data exports / local business data
+/data/
+/datas/
+/exports/
+/private/
+.hermes/
+screen.png
+screenshots/
+captures/
+*.png
+*.jpg
+*.jpeg
+
+# Backups / archives
+/.backups/
+*.zip
+*.tar
+*.tar.gz
+*.bak
+*.backup
+*.old
+
+# Logs
+*.log
+logs/
+
+# OS / editor / local AI tooling
+.DS_Store
+.vscode/
+.idea/
+.claude/
+# Ignore Cursor local state, but keep committed agent rules
+.cursor/*
+!.cursor/rules/
+!.cursor/rules/**

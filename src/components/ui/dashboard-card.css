@@ -1,0 +1,41 @@
+.ui-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-card);
+  box-shadow: none;
+}
+
+.dashboard-card--glass {
+  background: var(--color-surface);
+  backdrop-filter: none;
+  box-shadow: none;
+}
+
+.panel {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-card);
+  padding: var(--space-card);
+  box-shadow: none;
+}
+
+.panel--compact {
+  padding: var(--space-card-compact) var(--space-card);
+}
+
+.panel h2,
+.panel h3 {
+  margin: 0;
+  letter-spacing: -0.04em;
+}
+
+.panel p {
+  color: var(--color-text-secondary);
+}
+
+@media (max-width: 720px) {
+  .panel {
+    padding: 20px;
+    border-radius: var(--radius-lg);
+  }
+}

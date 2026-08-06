@@ -1,0 +1,19 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "your-cloudflare-pages-project-name",
+  "compatibility_date": "2026-06-23",
+  "pages_build_output_dir": "dist",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "your-d1-database-name",
+      "database_id": "your-d1-database-id"
+    }
+  ],
+  "services": [
+    {
+      "binding": "ETSY_SYNC_SERVICE",
+      "service": "etsy-dashboard-sync"
+    }
+  ]
+}

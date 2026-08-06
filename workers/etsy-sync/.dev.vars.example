@@ -1,0 +1,7 @@
+# Etsy credentials. Never commit real values.
+ETSY_API_KEY=replace-with-your-keystring
+ETSY_SHARED_SECRET=replace-with-your-shared-secret
+
+# Generate independently. ETSY_TOKEN_ENCRYPTION_KEY must decode to exactly 32 bytes.
+ETSY_TOKEN_ENCRYPTION_KEY=replace-with-base64-encoded-32-byte-key
+ETSY_BUYER_HMAC_SECRET=replace-with-a-long-random-hmac-secret

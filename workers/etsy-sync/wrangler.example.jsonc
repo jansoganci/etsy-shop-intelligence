@@ -1,0 +1,42 @@
+{
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  "name": "etsy-dashboard-sync",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-07-24",
+  "workers_dev": false,
+  "observability": {
+    "enabled": true
+  },
+  "vars": {
+    "ETSY_REDIRECT_URI": "https://your-pages-project.pages.dev/api/etsy/oauth/callback",
+    "APP_ORIGIN": "https://your-pages-project.pages.dev"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "your-d1-database-name",
+      "database_id": "your-d1-database-id"
+    }
+  ],
+  "queues": {
+    "producers": [
+      {
+        "binding": "ETSY_SYNC_QUEUE",
+        "queue": "etsy-dashboard-sync-tasks"
+      }
+    ],
+    "consumers": [
+      {
+        "queue": "etsy-dashboard-sync-tasks",
+        "max_batch_size": 1,
+        "max_batch_timeout": 1,
+        "max_retries": 12,
+        "dead_letter_queue": "etsy-dashboard-sync-tasks-dlq",
+        "max_concurrency": 1
+      }
+    ]
+  },
+  "triggers": {
+    "crons": ["*/5 * * * *", "0 3 * * *"]
+  }
+}

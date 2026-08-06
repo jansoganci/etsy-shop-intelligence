@@ -1,0 +1,70 @@
+.quest-card {
+  border-left: 3px solid var(--color-secondary);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.quest-card__badge {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: var(--radius-badge);
+  border: 1px solid color-mix(in srgb, var(--color-secondary) 28%, var(--color-border-subtle));
+  background: color-mix(in srgb, var(--color-secondary) 14%, var(--color-surface));
+  color: var(--color-secondary);
+  font: var(--text-caption);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.quest-card__title {
+  margin: 0;
+  font: var(--text-label);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--color-text-primary);
+  line-height: 1.35;
+}
+
+.quest-card__description {
+  margin: 0;
+  font: var(--text-body);
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  line-height: 1.45;
+}
+
+.quest-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.dashboard-section-heading__title {
+  margin: 0;
+  font: var(--text-title);
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+  color: var(--color-text-primary);
+}
+
+.quest-list__grid {
+  display: grid;
+  gap: var(--space-gutter);
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .quest-list__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 960px) {
+  .quest-list__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

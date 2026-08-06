@@ -1,0 +1,10 @@
+# Copy to `.dev.vars` for local Cloudflare Pages / Functions development.
+# Do not commit `.dev.vars` — it is listed in `.gitignore`.
+
+# Google Analytics 4 (service account with read access to your GA4 property)
+GA_PROPERTY_ID=your_ga4_property_id
+GA_CLIENT_EMAIL=your_google_service_account_email
+GA_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\nyour_private_key_here\n-----END PRIVATE KEY-----"
+
+# fal.ai (AI Image Studio)
+FAL_KEY=your_fal_ai_api_key

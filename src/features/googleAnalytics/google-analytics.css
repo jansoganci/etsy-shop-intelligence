@@ -1,0 +1,91 @@
+/* Google Analytics — compact sync bar, range select, placeholder, table */
+
+.analytics-sync-panel {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.analytics-sync-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 20px;
+}
+
+.analytics-sync-bar__title {
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--color-text-primary);
+  white-space: nowrap;
+}
+
+.analytics-sync-bar__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-text-secondary);
+  font-size: 0.88rem;
+  white-space: nowrap;
+}
+
+.analytics-sync-bar__item strong {
+  color: var(--color-text-primary);
+  font-weight: 600;
+}
+
+.analytics-sync-bar__range {
+  cursor: pointer;
+}
+
+.analytics-sync-bar__actions {
+  display: inline-flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.analytics-range-select {
+  min-width: 150px;
+  min-height: 36px;
+  padding: 6px 12px;
+  border-radius: var(--radius-pill);
+  font-size: 0.86rem;
+}
+
+.analytics-placeholder-panel {
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.analytics-placeholder-copy {
+  margin: 0;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  max-width: 40rem;
+}
+
+.analytics-content--syncing {
+  opacity: 0.6;
+  pointer-events: none;
+  transition: opacity 140ms ease;
+}
+
+.data-table__truncate {
+  display: inline-block;
+  max-width: 320px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: bottom;
+}
+
+@media (max-width: 720px) {
+  .analytics-sync-bar__item {
+    width: 100%;
+  }
+
+  .analytics-sync-bar__range {
+    flex-wrap: wrap;
+  }
+}
